@@ -82,3 +82,40 @@ let userDetail: User = {
 
 // console.log(add(2 ,3));
 
+
+
+
+
+// Type Assertion 
+
+const btn = document.getElementById('btn') as HTMLElement ;
+const button =  <HTMLElement> document.getElementById('btn');
+btn?.onclick
+
+const img = document.getElementById('img') as HTMLImageElement ;
+
+img.src ;
+
+const form = document.getElementById('myform') as HTMLFormElement;
+
+// form.onsubmit = (e) =>{
+//     e.preventDefault()
+
+//     console.log(m)
+// }
+
+
+interface data {
+    name: string ,
+    email:string ,
+}
+
+const myobj: data  ={
+   name: "ake" ,
+   email: "abhikw@gmai.com",
+}
+
+ 
+
+
+
