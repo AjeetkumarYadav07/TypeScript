@@ -119,3 +119,61 @@ const myobj: data  ={
 
 
 
+
+/// Utility Types 
+
+ // Partial <Type>
+
+
+//  type Cutsomer = {
+//     name:string ,
+//     email:string ,
+//     age:number ,
+//  }
+
+//  type PartialUser  = Partial<Cutsomer> ;
+
+
+ // Required  <Type>
+
+//  type Cutsomer = {
+//     name?:string ,
+//    age?: number };
+
+//    type RequiredUser = Required<User> ;
+
+
+
+// Read Only 
+
+// type customer = {
+//     name:String ,
+//     age:number ,
+//     email:string
+// }
+
+// const used :Readonly<customer>  = {
+//     name: "Aejt" ,
+//     age: 23 ,
+//     email: "ajww.gamil"
+// }
+
+// used.age = 33; // Error :  cannot assgin to 'age' becouse it's readonly proppety 
+
+
+
+
+// Record <Keys , Type >
+
+
+// Pick <Type , keys >
+
+type Admin = {
+     name:string , 
+     age:number ,
+     email:string,
+
+}
+
+type Adminpnel = Pick<Admin , "name" | "email" >; 
+
