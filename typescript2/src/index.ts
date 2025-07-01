@@ -177,3 +177,18 @@ type Admin = {
 
 type Adminpnel = Pick<Admin , "name" | "email" >; 
 
+
+
+// Generics 
+
+const fun = <T> (n:T) :T =>{
+   
+    return n;
+
+}
+
+const news = fun(33) ;
+const hel = fun("sd")
+
+
+
