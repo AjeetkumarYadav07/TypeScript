@@ -1,33 +1,35 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+
 import './App.css'
+import ContactForm from './components/ContactForm'
+import type { Contact } from './types/contact'
 
 function App() {
-  const [count, setCount] = useState(0)
+   const [Contacts , setContacts] = useState<Contact[]> ([]);
+
+ 
+  // add contact funtion 
+
+  const addContact =(name:string , email:string , phone:string) =>{
+    const newContact:Contact = {
+         
+      id:Date.now().toString() ,
+      name,
+      email,
+      phone
+    };
+
+    setContacts([...Contacts , newContact]);
+  };
+
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+       
+         <h1> My Contact</h1>
+
+        <ContactForm onAdd={addContact} />
+       
     </>
   )
 }
