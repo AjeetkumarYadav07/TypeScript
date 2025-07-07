@@ -1,0 +1,24 @@
+// Complete documentation of Weather-Widget App .
+
+working on version 1 .
+
+//Day 1. update !
+
+Build The simple Ui and Interface using typscript .
+
+WeatherCard.tsx >> 
+  Holding the Interface of Ui .
+ ✅ Folder structure set up
+✅ WeatherCard component created and tested with static props
+✅ App displays the card with test data .
+
+
+
+// Day 2 .
+
+🚀 Next steps (for tomorrow):
+(i).  Connect to OpenWeatherMap API to fetch live weather data
+(ii). Replace the test props with real API response
+Add input to search for any city
+Handle loading and error states
+Optional: polish UI or add extra features (e.g., forecast, units toggle)
