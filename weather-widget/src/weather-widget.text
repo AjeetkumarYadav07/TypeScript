@@ -19,6 +19,6 @@ WeatherCard.tsx >>
 🚀 Next steps (for tomorrow):
 (i).  Connect to OpenWeatherMap API to fetch live weather data
 (ii). Replace the test props with real API response
-Add input to search for any city
-Handle loading and error states
-Optional: polish UI or add extra features (e.g., forecast, units toggle)
+(iii) Add input to search for any city
+(iv). Handle loading and error states
+(v).  Optional: polish UI or add extra features (e.g., forecast, units toggle)
